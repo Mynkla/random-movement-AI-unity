@@ -10,12 +10,10 @@ using System.Collections;
 public class RandomMovement : MonoBehaviour {
 
     //public AudioClip AlienScream;
+    
     public float speed;
-    //float x = Random.RandomRange (-1, 1);
-    //float z = Random.RandomRange (-1, 1);
     public int rotationSpeed;
     public int maxdistance;
-    //private Vector3 endPos = new Vector3(-117.6f, -13.4f, -139.5f);
     float timeVar = 0;
     float step = Mathf.PI / 60;
     float rotationRange = 120;                  //  How far should the object rotate to find a new direction?
