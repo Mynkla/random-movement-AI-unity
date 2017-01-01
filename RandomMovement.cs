@@ -12,13 +12,13 @@ public class RandomMovement : MonoBehaviour {
     //public AudioClip AlienScream;
     public float minSpeed;  // minimum range of speed to move
     public float maxSpeed;  // maximum range of speed to move
-    public float speed;     // speed is a constantly changing value from the random range of minSpeed and maxSpeed 
+    float speed;     // speed is a constantly changing value from the random range of minSpeed and maxSpeed 
     
     public string [] collisionTags;             //  What are the GO tags that will act as colliders that trigger a
                                                 //  direction change? Tags like for walls, room objects, etc.
     public AudioClip collisionSound;
 
-    public float step = Mathf.PI / 60;
+    float step = Mathf.PI / 60;
     float timeVar = 0;
     float rotationRange = 120;                  //  How far should the object rotate to find a new direction?
     float baseDirection = 0;
